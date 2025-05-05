@@ -52,7 +52,7 @@ def predict(data: List[PostData]):
     disaster_prediction = model.predict(df[['Post']])
 
     df['DisasterType'] = disaster_prediction.ravel()
-    #print(disaster_prediction)
+    print(disaster_prediction)
     df['SentimentPrediction'] = df['Post'].apply(predict_sentiment)
     
     return df.to_dict(orient="records")
