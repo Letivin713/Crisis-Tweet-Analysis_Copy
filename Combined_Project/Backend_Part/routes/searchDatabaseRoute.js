@@ -38,7 +38,7 @@ router.get('/', async (req, res) => {
         ////////////////////////////////////////////////////////
         //Change this with Python Server that uses Model's link
         ///////////////////////////////////////////////////////
-        const response = await fetch("http://localhost:8000/", {
+        const response = await fetch("https://model-api-pw8p.onrender.com", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(combinedData) 
