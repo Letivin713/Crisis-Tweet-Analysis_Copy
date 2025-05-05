@@ -14,7 +14,7 @@ const cors = require('cors');
 //change this to the links of the python server using the model and the frontend's link
 ///////////////////////////////////////////////////////////////////////////////////////
 app.use(cors({
-    origin: ['http://localhost:3000', 'http://localhost:8000', 'https://model-api-pw8p.onrender.com']
+    origin: ['http://localhost:3000', 'http://localhost:8000', 'https://model-api-pw8p.onrender.com', 'https://crisis-tweet-analysis.vercel.app/']
 }));
 app.use(express.json());
 
