@@ -4,15 +4,12 @@ from textblob import TextBlob
 from pydantic import BaseModel
 from fastapi import FastAPI
 import sys
-import pickle
 
 from typing import List
 
 from textblob import TextBlob
 
 from preprocessing import TweetPreprocessor
-
-import cloudpickle
 
 
 sys.modules['__main__'].TweetPreprocessor = TweetPreprocessor
