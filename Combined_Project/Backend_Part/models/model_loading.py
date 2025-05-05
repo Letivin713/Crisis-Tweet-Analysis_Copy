@@ -40,7 +40,7 @@ global model
 ###########################################
 ## Update filepath if needed
 ###########################################
-model = joblib.load(r"D:\Twitter_Project\Backend_Project\models\disaster_sentiment_pipeline.pkl")
+model = joblib.load(r"./models/disaster_sentiment_pipeline.pkl")
 
 @app.post("/")
 def predict(data: List[PostData]):
