@@ -88,7 +88,7 @@ function App() {
       axios.get('https://backend-lhwi.onrender.com/search')
         .then(res => {
           setTweetData(res.data); // res.data is your actual tweet array
-          #console.log(res.data);
+          //console.log(res.data);
         })
         .catch(err => console.error(err));
     }, []);
