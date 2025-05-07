@@ -8,7 +8,7 @@ router.get('/', async (req, res) => {
     try {
         const result = await prisma.data_Table.findMany({
                       ///////////////////////////////////////////////////////////////////////////////////////////////////////
-            take: 75 //You can remove this, if you think it can display all 9000+ data on the frontend or change as desired
+             //You can remove this, if you think it can display all 9000+ data on the frontend or change as desired
                       ///////////////////////////////////////////////////////////////////////////////////////////////////////
         }); 
         const formattedResult = result.map((result, index) => ({
@@ -22,7 +22,7 @@ router.get('/', async (req, res) => {
         }));
         
         const posts = await prisma.posts.findMany({
-            take: 25 // or however many you want to send
+            // or however many you want to send
         });
         const existingCount = await prisma.data_Table.count() + 9214;
         const formattedPosts = posts.map((post, index) => ({
